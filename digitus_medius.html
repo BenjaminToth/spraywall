@@ -7,90 +7,91 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            background: url('design/hatter2.png') no-repeat center center fixed;
-            background-size: cover;
-            overflow-y: auto; /* Görgethetővé teszi a tartalmat */
-        }
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: url('design/hatter2.png') no-repeat center center fixed;
+    background-size: cover;
+    overflow-y: auto; /* Görgethetővé teszi a tartalmat */
+}
 
-        .container {
-            text-align: center;
-            width: 100%;
-            max-width: 400px;
-            margin-top: 20px; /* Kisebb távolság a tetején */
-        }
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 60px; /* Kisebb távolság a tetején a vissza gomb miatt */
+}
 
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
-        }
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
 
-        h1 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 900;
-            color: #1f5611;
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: #1f5611;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 
-        .info {
-            text-align: left;
-            margin-top: 0px;
-            padding-left: 10px;
-        }
+.info {
+    text-align: left;
+    margin-top: 0px;
+    padding-left: 10px;
+}
 
-        .info p {
-            font-weight: 500; /* Erősebb sima szöveg */
-        }
+.info p {
+    font-weight: 500; /* Erősebb sima szöveg */
+}
 
-        .info p strong {
-            font-weight: 700; /* Erősebb kiemelt szöveg */
-            color: #1f5611;
-        }
+.info p strong {
+    font-weight: 700; /* Erősebb kiemelt szöveg */
+    color: #1f5611;
+}
 
-        .info-footer {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start; /* Balra igazítás */
-            margin-top: 10px;
-        }
+.info-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Balra igazítás */
+    margin-top: 10px;
+}
 
-        .small-img {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            margin-left: 0px; /* Kép eltolása a szövegtől */
-        }
+.small-img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 0px; /* Kép eltolása a szövegtől */
+}
 
-        /* Vissza gomb stílus */
-        .back-btn {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: #1f5611;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 18px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
+/* Vissza gomb stílus */
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #1f5611;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 1; /* A gomb fölé helyezi a tartalmat */
+}
 
-        .back-btn:hover {
-            background-color: #12a32d;
-        }
+.back-btn:hover {
+    background-color: #12a32d;
+}
     </style>
 </head>
 <body>
