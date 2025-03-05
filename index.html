@@ -7,19 +7,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             min-height: 100vh;
-            background: url('design/hatter.png') no-repeat center center fixed;
+            /* Legalább a képernyő magasságát kitölti */
+            background: url('design/hatter2.png') no-repeat center center fixed;
+            /* A háttér rögzítése */
             background-size: cover;
-            overflow: hidden;
-            /* Megakadályozza, hogy a body túllépje a képernyőt */
+            /* A háttér lefedje az egész képernyőt */
+            overflow-y: auto;
+            /* Görgethetővé teszi a tartalmat */
         }
 
         .container {
