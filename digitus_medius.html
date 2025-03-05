@@ -24,22 +24,6 @@
             width: 100%;
             max-width: 400px;
         }
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            text-align: center;
-            background-color: #1f5611;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .btn:hover {
-            background-color: #12a32d;
-        }
         img {
             max-width: 100%;
             height: auto;
@@ -52,12 +36,31 @@
             font-size: 30px; 
             margin-bottom: 10px;
         }
-        h2 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-            color: #1f5611;
-            margin-bottom: 10px;
+        .info {
+            text-align: left; 
+            margin-top: 0px;
+            padding-left: 10px;
         }
+        .info p {
+            font-weight: 500; /* Erősebb sima szöveg */
+        }
+        .info p strong {
+            font-weight: 700; /* Erősebb kiemelt szöveg */
+            color: #1f5611;
+        }
+        .info-footer {
+            display: flex;
+            align-items: center; 
+            justify-content: flex-start; /* Balra igazítás */
+            margin-top: 10px;
+        }
+        .small-img {
+            width: 150px; 
+            height: auto; 
+            border-radius: 50%; 
+            margin-left: 0px; /* Kép eltolása a szövegtől */
+        }
+        /* Vissza gomb stílus */
         .back-btn {
             position: absolute;
             top: 10px;
@@ -76,15 +79,21 @@
     </style>
 </head>
 <body>
+    <!-- Vissza gomb a menu.html oldalra -->
+    <a href="menu.html" class="back-btn">Vissza</a>
+
     <div class="container">
-        <a href="index.html" class="back-btn">Vissza</a>
-        <h1>Gravity Spray Wall (40°)</h1>
-        <img src="design/sikalnak.png" alt="Sikálós kép">
-        <h2>Utak:</h2>
-        <a href="digitus_medius.html" class="btn d-flex justify-content-between align-items-center">
-            <span>Digitus Medius</span>
-            <span>V5?</span>
+        <h1>Digitus Median</h1>
+        <!-- Kép nagy felbontásban történő megnyitása új lapon -->
+        <a href="design/gravity_spray_wall.png" target="_blank">
+            <img src="design/gravity_spray_wall.png" alt="Utak">
         </a>
+        <div class="info">
+            <p><strong>Nehézség:</strong> V5?</p>
+            <p><strong>Megjegyzés:</strong> Sok a fogás, ezért két részletben érdemes próbálni. Az elemen lévő fekete fogás felezi jól az utat.</p>
+            <p><strong>Építő:</strong> Beni</p>
+            <img src="design/ben_beka.png" alt="Építő képe" class="small-img">
+        </div>
     </div>
 </body>
 </html>
