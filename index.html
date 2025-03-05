@@ -1,4 +1,5 @@
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,15 +15,23 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             background: url('design/hatter.png') no-repeat center center fixed;
             background-size: cover;
+            overflow: hidden;
+            /* Megakadályozza, hogy a body túllépje a képernyőt */
         }
+
         .container {
             text-align: center;
             width: 100%;
             max-width: 400px;
+            max-height: 100vh;
+            /* A container maximális magassága ne lépje túl a képernyőt */
+            overflow-y: auto;
+            /* Engedélyezi a görgetést */
         }
+
         .btn {
             display: block;
             width: 100%;
@@ -36,16 +45,20 @@
             text-decoration: none;
             font-size: 18px;
         }
+
         .btn:hover {
             background-color: #12a32d;
         }
+
         img {
             max-width: 100%;
             height: auto;
             margin: 10px 0;
         }
     </style>
+
 </head>
+
 <body>
     <div class="container">
         <img src="design/pirosleny.png" alt="Felső kép">
@@ -53,4 +66,5 @@
         <img src="design/kekleny.png" alt="Alsó kép">
     </div>
 </body>
+
 </html>
