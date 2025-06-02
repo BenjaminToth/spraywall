@@ -1,0 +1,416 @@
+/* From index.html */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background: url('design/hatter2.png') no-repeat center center fixed;
+    background-size: cover;
+    overflow-y: auto; /* Görgethető egész oldal */
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    height: 100%; /* 100%-os magasság */
+    overflow-y: auto; /* Csak akkor gördül, ha túl nagy a tartalom */
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #1f5611;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #12a32d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* From menu.html */
+/* A body-t rögzítem háttérrel, hogy kitöltse a képernyőt */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            /* Legalább a képernyő magasságát kitölti */
+            background: url('design/hatter2.png') no-repeat center center fixed;
+            /* A háttér rögzítése */
+            background-size: cover;
+            /* A háttér lefedje az egész képernyőt */
+            overflow-y: auto;
+            /* Görgethetővé teszi a tartalmat */
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 60px;
+            /* A cím és a gomb elválasztása */
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            text-align: center;
+            background-color: #1f5611;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .btn:hover {
+            background-color: #12a32d;
+        }
+
+        .btn-lightgreen {
+            background-color: #6b0663; /* Világosabb zöld */
+        }
+
+        .btn-lightgreen:hover {
+            background-color: #b7039c; /* A hover szín ugyanaz marad */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            color: #1f5611;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #1f5611;
+            margin-bottom: 10px;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #1f5611;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background-color: #12a32d;
+        }
+
+/* From no_lemon_no_melon.html */
+html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: url('design/hatter2.png') no-repeat center center fixed;
+            background-size: cover;
+            overflow-y: auto;
+            /* Görgethetővé teszi a tartalmat */
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 60px;
+            /* A cím lejjebb kerül, hogy ne ütközzön a gombbal */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            color: #1f5611;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            text-align: left;
+            margin-top: 0px;
+            padding-left: 10px;
+        }
+
+        .info p {
+            font-weight: 500;
+            /* Erősebb sima szöveg */
+        }
+
+        .info p strong {
+            font-weight: 700;
+            /* Erősebb kiemelt szöveg */
+            color: #1f5611;
+        }
+
+        .info-footer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            /* Balra igazítás */
+            margin-top: 10px;
+        }
+
+        .small-img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-left: 0px;
+            /* Kép eltolása a szövegtől */
+        }
+
+        /* Vissza gomb stílus */
+        .back-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #1f5611;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background-color: #12a32d;
+        }
+
+/* From magyarozo.html */
+/* A body-t rögzítem háttérrel, hogy kitöltse a képernyőt */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            /* Legalább a képernyő magasságát kitölti */
+            background: url('design/hatter2.png') no-repeat center center fixed;
+            /* A háttér rögzítése */
+            background-size: cover;
+            /* A háttér lefedje az egész képernyőt */
+            overflow-y: auto;
+            /* Görgethetővé teszi a tartalmat */
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 60px;
+            /* A cím és a gomb elválasztása */
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            text-align: center;
+            background-color: #1f5611;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .btn:hover {
+            background-color: #12a32d;
+        }
+
+        .btn-lightgreen {
+            background-color: #6b0663; /* Világosabb zöld */
+        }
+
+        .btn-lightgreen:hover {
+            background-color: #b7039c; /* A hover szín ugyanaz marad */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            color: #1f5611;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #1f5611;
+            margin-bottom: 10px;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #1f5611;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background-color: #12a32d;
+        }
+
+/* From digitus_medius.html */
+html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: url('design/hatter2.png') no-repeat center center fixed;
+            background-size: cover;
+            overflow-y: auto;
+            /* Görgethetővé teszi a tartalmat */
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 60px;
+            /* A cím lejjebb kerül, hogy ne ütközzön a gombbal */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            color: #1f5611;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            text-align: left;
+            margin-top: 0px;
+            padding-left: 10px;
+        }
+
+        .info p {
+            font-weight: 500;
+            /* Erősebb sima szöveg */
+        }
+
+        .info p strong {
+            font-weight: 700;
+            /* Erősebb kiemelt szöveg */
+            color: #1f5611;
+        }
+
+        .info-footer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            /* Balra igazítás */
+            margin-top: 10px;
+        }
+
+        .small-img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-left: 0px;
+            /* Kép eltolása a szövegtől */
+        }
+
+        /* Vissza gomb stílus */
+        .back-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #1f5611;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background-color: #12a32d;
+        }
